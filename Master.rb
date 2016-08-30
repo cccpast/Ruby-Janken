@@ -6,9 +6,10 @@ class Master
     "グー", "チョキ", "パー"
   ]
 
+  public
+  
   # ゲーム進行
   def gameStart
-    # 戦術のインスタンス化
     ask_tactice = AskHand.new()
     random_tactice = RandomHand.new()
   
@@ -32,6 +33,8 @@ class Master
     end
   end
 
+  private
+  
   # ジャンケンする
   def jankenPlay(player1, player2)
     winner = nil
