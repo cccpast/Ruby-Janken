@@ -3,17 +3,17 @@ require_relative "AskHand"
 
 class Player
 
-  attr_reader :tactice
+  attr_reader :tactics
   attr_accessor :name
   
-  def initialize(tactice, name="プレイヤ")
-    @tactice = tactice
+  def initialize(tactics, name="プレイヤ")
+    @tactics = tactics
     @name = name
   end
 
   # ジャンケンの手を出す
   def outputHand
-    return @tactice.returnHand
+    return @tactics.returnHand
   end
   
 end

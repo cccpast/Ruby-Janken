@@ -63,7 +63,7 @@ class Master
   
     # ジャンケンの手を表示可能な形に変更(定数からとってくる)
   def printHand(handNum)
-    return Master::HAND[handNum]
+    return HAND[handNum]
   end
 
 end
